@@ -22,3 +22,7 @@ The APIs are listed below:
 TripAdvisor API: http://developer-tripadvisor.com/content-api/
 
 Google Tasks API: https://developers.google.com/tasks
+
+
+### Special Notes
+There is also a txt file in docs which also contains these ideas.
