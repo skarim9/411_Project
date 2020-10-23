@@ -1,0 +1,2 @@
+3. Choosing source material
+   1. As a logged-in user, I can select pictures and/or album artwork from the respective authenticated account, or from the other accounts that were linked post authentication.

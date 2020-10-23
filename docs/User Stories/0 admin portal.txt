@@ -1,0 +1,2 @@
+“Admin” user/internal users:
+As an internal user with admin access, I can access an internal-only portal where I can view telemetry data (stored in a relational database) about the application e.g. time spent on site, orders placed, most commonly connected social accounts, how many users actually placed orders, errors, etc.

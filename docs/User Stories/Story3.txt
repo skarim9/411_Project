@@ -1,3 +1,0 @@
-Converting source material 
-
-As a logged-in user who has chosen source material, I can then apply my chosen deep art effect to my source material and see the result i.e. the collage; if I don’t like it, I can go back and choose different source material and try again.

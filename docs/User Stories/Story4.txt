@@ -1,5 +1,0 @@
-Ordering my t-shirt
-
-As a user who has made their collage, I can see a preview of my collage on a t-shirt and type in information required to place my order. 
-
-As a user who has typed in all required information (as determined by Pwinty), I will confirm and submit my order. 
