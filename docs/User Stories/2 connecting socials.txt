@@ -1,0 +1,3 @@
+2. Connecting socials
+   1. As a user who has already authenticated with one of the above, I can choose to authenticate/connect with another social account  
+   2. The user can continue straight to choosing source material from the previously selected account.

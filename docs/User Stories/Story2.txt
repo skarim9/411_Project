@@ -1,5 +1,0 @@
-Choosing source material
-
-As a logged-in user, I can click on a button “Choose from Spotify” and then browse and choose album artwork from my Recently Played to put on my t-shirt.
-
-As a logged-in user, I can click on a button “Choose from Facebook” and then browse and choose one or multiple Facebook friends’ profile pictures.

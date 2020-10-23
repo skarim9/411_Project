@@ -1,0 +1,2 @@
+1. Logging in
+   1. As a new user, I can choose to authenticate (create an account) using either Facebook, Instagram or Spotify.
