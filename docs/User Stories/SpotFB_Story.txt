@@ -1,0 +1,5 @@
+Logging in and connecting my Spotify and Facebook accounts
+
+As a user, I can login to my Spotify or Facebook accounts and grant access to my recently-played album art or the profile pictures of my friends to use as source material for my t-shirt.
+
+I can create a new account using my email address and connect my Spotify, Facebook, Instagram accounts later.
