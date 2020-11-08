@@ -5,9 +5,9 @@ var submissionId;
 var maxImageSize;
 
 var deepArtEffectsClient = apigClientFactory.newClient({
-	apiKey: 'O4hbyntqyw7vQhp4Hei137fpKKw2fyZ24hf6AHjf',
-	accessKey: 'AKIA3XE3HF7SVBFS4G2B',
-    secretKey: '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'
+	apiKey: '',
+	accessKey: '',
+    secretKey: ''
 });
 
 var chosen_styles = [122, 116, 112, 9, 34]
