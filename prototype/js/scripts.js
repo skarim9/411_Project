@@ -4,13 +4,13 @@ var resultCheck;
 var submissionId;
 var maxImageSize;
 
-var deepArtEffectsClient = apigClientFactory.newClient({
+var deepArtEffectsClient = apigClientFactory.newClient({		// Get all keys after signing up on https://developer.deeparteffects.com/page/guide
 	apiKey: '',
 	accessKey: '',
     secretKey: ''
 });
 
-var chosen_styles = [122, 116, 112, 9, 34]
+var chosen_styles = [122, 116, 112, 9, 34];
 
 $(document).ready(function(){
 	$("#result").hide();
@@ -20,11 +20,11 @@ $(document).ready(function(){
     	console.log("Successfully loaded styles");
         //This is where you would put a success callback
         var ol = $('<ol id="selectable">');
-        ol.appendTo('#style-list')
+        ol.appendTo('#style-list');
 		styles = result.data;
         for (var i = 0, length = chosen_styles.length; i < length; i++) {	
   			var li = $("<li>");
-  			li.attr('onClick',"uploadImage('"+styles[chosen_styles[i]].id+"')")
+  			li.attr('onClick',"uploadImage('"+styles[chosen_styles[i]].id+"')");
   			var div = $('<div class="style">');
 			div.attr('style', "background-image: url("+styles[chosen_styles[i]].url+")");
 			li.append(div);
@@ -34,10 +34,10 @@ $(document).ready(function(){
         //This is where you would put an error callback
         console.log("Error loading styles");
     });
-})
+});
 function uploadImage(styleId) {
 	if(imageBinary==null) {
-		alert('Please choose a picture first')
+		alert('Please choose a picture first');
 		return;
 	}
 
@@ -59,7 +59,7 @@ function uploadImage(styleId) {
 	deepArtEffectsClient.uploadPost(null, body)
 	.then(function(result) {
 		console.log("Successfully uploaded image");
-		submissionId = result.data.submissionId
+		submissionId = result.data.submissionId;
 		resultCheck = setInterval(imageReadyCheck, 2500);
 	}).catch(function(result){
         //This is where you would put an error callback
