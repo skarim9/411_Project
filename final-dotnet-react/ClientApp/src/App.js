@@ -4,6 +4,7 @@ import { Layout } from './components/Layout';
 import { Home } from './components/Home';
 
 import './custom.css'
+import { Callback } from './components/Callback';
 
 export default class App extends Component {
   static displayName = App.name;
@@ -11,7 +12,8 @@ export default class App extends Component {
   render () {
     return (
       <Layout>
-        <Route exact path='/' component={Home} />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/callback' component={Callback} />
       </Layout>
     );
   }
