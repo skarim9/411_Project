@@ -28,25 +28,6 @@ export class SpotifyAlbums extends Component {
         fetch(endpoint, options)
             .then((resp) => resp.json())
             .then((respJson) => {
-                //console.log(JSON.stringify(respJson));
-                /*
-                this.setState({
-                    albums: respJson.items
-                });
-                
-                for (const album in respJson['items']) {
-                    console.log(JSON.stringify(album));
-                    console.log(album['images'][0]['url']);
-                    this.setState((state) => {
-                        return {
-                            imageUrls: [
-                                ...state.imageUrls,
-                                album['images'][0]['url']
-                            ]
-                        }
-					});
-				}
-                */
                 respJson['items'].forEach((album) => {
                     console.log(album['album']['images'][0]['url']);
                     this.setState((state) => {
@@ -62,7 +43,6 @@ export class SpotifyAlbums extends Component {
 
                     });
                 });
-                //console.log(JSON.stringify(respJson['items'][0]['album']['images'][0]));
             })
             .catch((err) => {
                 console.log(err);
