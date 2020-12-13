@@ -8,7 +8,8 @@ export class SpotifyAlbums extends Component {
 
         this.state = {
             albums: [],
-            imageUrls: []
+            imageUrls: [],
+            imageJSX: <p>nothin here</p>
         }
 
         console.log(this.props.accessToken);
@@ -25,9 +26,43 @@ export class SpotifyAlbums extends Component {
             },
         };
         fetch(endpoint, options)
-            .then((resp) => resp.text())
+            .then((resp) => resp.json())
             .then((respJson) => {
-                console.log(respJson);
+                //console.log(JSON.stringify(respJson));
+                /*
+                this.setState({
+                    albums: respJson.items
+                });
+                
+                for (const album in respJson['items']) {
+                    console.log(JSON.stringify(album));
+                    console.log(album['images'][0]['url']);
+                    this.setState((state) => {
+                        return {
+                            imageUrls: [
+                                ...state.imageUrls,
+                                album['images'][0]['url']
+                            ]
+                        }
+					});
+				}
+                */
+                respJson['items'].forEach((album) => {
+                    console.log(album['album']['images'][0]['url']);
+                    this.setState((state) => {
+                        return {
+                            imageUrls: [
+                                ...state.imageUrls,
+                                album['album']['images'][0]['url']
+                            ],
+                            imageJSX: state.imageJSX + <img src={album['album']['images'][0]['url']}/>
+						}
+                    }, () => {
+                            console.log(JSON.stringify(this.state));
+
+                    });
+                });
+                //console.log(JSON.stringify(respJson['items'][0]['album']['images'][0]));
             })
             .catch((err) => {
                 console.log(err);
@@ -42,7 +77,9 @@ export class SpotifyAlbums extends Component {
     render() {
         return (
             <div>
-
+                {this.state.imageUrls.map(url => (
+                    <img src={url} width={150} />
+                ))}
             </div>
         );
     }
