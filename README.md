@@ -1,5 +1,10 @@
-## First Idea
+## Directory structure
+Our final project is in `final-dotnet-react`, prototype is in `prototype`, and other assignments are in `docs`.
 
+## Running
+Run with `dotnet run` or `npm start` to run just the React SPA.
+
+## Project description
 Our first idea for the project uses the Deep Art API and the Pwinty API, a T-Shirt printing API. The user can upload their own pictures, get album art from Spotify, or maybe their
 friends profile pictures from Facebook and use the Deep Art API to turn them into a painting. The possibilities are endless for their picture choice. After the Deep Art API
 transforms the user's picture into a work of art, our web app send the image/collage to the Pwinty api to let them order a t-shirt with the collage printed on it.
