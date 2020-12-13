@@ -15,7 +15,7 @@ Deep Art -> https://www.programmableweb.com/api/deep-art-effects-style-transfer-
 
 T-Shirt Printing API -> https://pwinty.com/api/
 
-## Second Idea
+## Second Idea (the one we didn't do)
 Our second idea for the project uses the TripAdvisor API and Google Tasks API for planning your next travel itinerary. This web app is the place for keeping track of your
 travel plans and can even add new destinations into your itinerary using the Google Tasks API. It can also help with planning and will help calculate the best route or order of 
 visiting your destinations for the day. For example, if you have 5 destinations planned for a day, we can use the Google Maps API and TripAdvisor API to get the shortest and most 
