@@ -34,6 +34,8 @@ export class Callback extends Component {
             .catch((err) => {
                 console.log(err);
             });
+
+        window.location.href = '/';
 	}
 
     render() {
