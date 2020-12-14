@@ -7,7 +7,7 @@ export class Home extends Component {
   render () {
     return (
       <div>
-            <h1>411 Final Project</h1>
+            <h1 style={{margin:'50px'}}>411 Final Project</h1>
             <Spotify />
       </div>
     );
