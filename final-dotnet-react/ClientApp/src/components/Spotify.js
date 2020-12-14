@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import { SpotifyAlbums } from './SpotifyAlbums';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
 
 export class Spotify extends Component {
     static displayName = Spotify.name;
@@ -28,13 +35,34 @@ export class Spotify extends Component {
 
         return (
             <div>
-                {!spotifyAuthToken && <button onClick={this.login}>login to Spotify</button>}
+                {!spotifyAuthToken && 
+                <Container fluid>
+                    <Row>
+                        <Button
+                            className="btn-block"
+                            variant="primary"
+                            onClick={this.login}>Login to Spotify
+                        </Button>
+                    </Row>
+                    <br />
+                    <Row>
+                        <Button 
+                            className="btn-block"
+                            variant="secondary"
+                            onClick={this.logout}>Logout
+                        </Button>
+                    </Row>   
+                </Container>
+                }
                 {spotifyAuthToken && 
                     <div>
                         <SpotifyAlbums accessToken={spotifyAuthToken} />
                     </div>
                 }
-                <button onClick={this.logout}>logout</button>
+                <br />
+                <ButtonGroup>
+                    
+                </ButtonGroup>
             </div>
         );
     }
