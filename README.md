@@ -1,3 +1,5 @@
+## Team 5
+
 ## Directory structure
 Our final project is in `final-dotnet-react`, prototype is in `prototype`, and other assignments are in `docs`.
 
@@ -5,9 +7,8 @@ Our final project is in `final-dotnet-react`, prototype is in `prototype`, and o
 Run with `dotnet run` or `npm start` to run just the React SPA.
 
 ## Project description
-Our first idea for the project uses the Deep Art API. The user can upload their own pictures, get album art from Spotify, or maybe their
-friends profile pictures from Facebook and use the Deep Art API to turn them into a painting. The possibilities are endless for their picture choice. After the Deep Art API
-transforms the user's picture into a work of art the web app allows the user to use that art image for any purpose they wish.
+Our first idea for the project uses the Deep Art API. The user can upload their own pictures or get album cover pictures from Spotify and use the Deep Art API to turn their image into a painting. The possibilities are endless for their picture choice and with the preconfigured styling options they can create impressive art work. After the Deep Art API transforms the user's picture into a work of art the web app allows the user to use that art image for any purpose they wish.
+
 The APIs are listed below:
 
 Deep Art -> https://www.programmableweb.com/api/deep-art-effects-style-transfer-enterprise 
