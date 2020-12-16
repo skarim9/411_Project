@@ -1,6 +1,10 @@
 ## Directory structure
 Our final project is in `final-dotnet-react`, prototype is in `prototype`, and other assignments are in `docs`.
 
+## Demo video
+https://drive.google.com/file/d/12HLAncH5lD9ZspnarKsxtQ89mLaNYvJz/view?usp=sharing
+(only accessible to BU accounts)
+
 ## Running
 Run with `dotnet run` or `npm start` to run just the React SPA.
 
