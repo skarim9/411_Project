@@ -54,11 +54,16 @@ export class SpotifyAlbums extends Component {
         this.getAlbums();
 	}
 
+    imgClicked = (ev) => {
+        const imgElem = ev.target;
+        imgElem.src = '/jbconv.jpg';
+    };
+
     render() {
         return (
             <div>
                 {this.state.imageUrls.map(url => (
-                    <img src={url} width={150} />
+                    <img onClick={this.imgClicked} src={url} width={150} />
                 ))}
             </div>
         );
