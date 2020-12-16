@@ -1,4 +1,11 @@
 /* Provide sufficient contrast against white background */
+body{
+  background-color: #ffe5b9;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: #f1ae89;
+}
+
 a {
   color: #0366d6;
 }
